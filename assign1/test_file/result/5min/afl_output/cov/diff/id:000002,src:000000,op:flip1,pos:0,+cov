@@ -1,0 +1,9 @@
+diff id:000001,src:000000,op:flip1,pos:0,+cov -> id:000002,src:000000,op:flip1,pos:0,+cov
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccpp.c
+  New 'function' coverage: expect()
+  New 'line' coverage: 106
+  New 'line' coverage: 108
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccgen.c
+  New 'line' coverage: 544
+  New 'line' coverage: 7172
+  New 'line' coverage: 7173

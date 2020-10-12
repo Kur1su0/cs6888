@@ -1,0 +1,22 @@
+diff id:000101,src:000001,op:havoc,rep:64 -> id:000102,src:000001,op:havoc,rep:64
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccpp.c
+  New 'function' coverage: preprocess()
+  New 'line' coverage: 1714
+  New 'line' coverage: 1716
+  New 'line' coverage: 1721
+  New 'line' coverage: 1722
+  New 'line' coverage: 1726
+  New 'line' coverage: 1729
+  New 'line' coverage: 1730
+  New 'line' coverage: 1731
+  New 'line' coverage: 1993
+  New 'line' coverage: 1994
+  New 'line' coverage: 2011
+  New 'line' coverage: 2012
+  New 'line' coverage: 2645
+  New 'line' coverage: 2646
+  New 'line' coverage: 2652
+  New 'line' coverage: 2653
+  New 'line' coverage: 2654
+  New 'line' coverage: 2655
+  New 'line' coverage: 2656

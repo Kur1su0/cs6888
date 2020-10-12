@@ -1,0 +1,22 @@
+klee --output-dir=out_alloc_mem alloc_mem.bc
+PID: 40920
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2020-10-06 22:38:32
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2020-10-06 22:38:32
+Elapsed: 00:00:00
+KLEE: done: explored paths = 3
+KLEE: done: avg. constructs per query = 22
+KLEE: done: total queries = 5
+KLEE: done: valid queries = 1
+KLEE: done: invalid queries = 4
+KLEE: done: query cex = 5
+
+KLEE: done: total instructions = 51
+KLEE: done: completed paths = 3
+KLEE: done: generated tests = 3

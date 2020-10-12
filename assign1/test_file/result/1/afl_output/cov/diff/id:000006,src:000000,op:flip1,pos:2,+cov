@@ -1,0 +1,4 @@
+diff id:000005,src:000000,op:flip1,pos:2 -> id:000006,src:000000,op:flip1,pos:2,+cov
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccgen.c
+  New 'line' coverage: 7373
+  New 'line' coverage: 7375

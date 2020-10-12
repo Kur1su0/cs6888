@@ -1,0 +1,9 @@
+diff id:000270,src:000001,op:havoc,rep:8 -> id:000271,src:000001,op:havoc,rep:128
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccpp.c
+  New 'line' coverage: 2638
+  New 'line' coverage: 2639
+  New 'line' coverage: 2640
+  New 'line' coverage: 2641
+  New 'line' coverage: 2642
+  New 'line' coverage: 2643
+  New 'line' coverage: 2644

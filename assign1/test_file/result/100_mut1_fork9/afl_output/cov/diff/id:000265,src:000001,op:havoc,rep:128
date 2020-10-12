@@ -1,0 +1,35 @@
+diff id:000264,src:000001,op:havoc,rep:64,+cov -> id:000265,src:000001,op:havoc,rep:128
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccpp.c
+  New 'function' coverage: parse_number()
+  New 'line' coverage: 2260
+  New 'line' coverage: 2268
+  New 'line' coverage: 2269
+  New 'line' coverage: 2270
+  New 'line' coverage: 2271
+  New 'line' coverage: 2272
+  New 'line' coverage: 2273
+  New 'line' coverage: 2274
+  New 'line' coverage: 2275
+  New 'line' coverage: 2407
+  New 'line' coverage: 2408
+  New 'line' coverage: 2409
+  New 'line' coverage: 2411
+  New 'line' coverage: 2412
+  New 'line' coverage: 2415
+  New 'line' coverage: 2435
+  New 'line' coverage: 2436
+  New 'line' coverage: 2437
+  New 'line' coverage: 2438
+  New 'line' coverage: 2442
+  New 'line' coverage: 2452
+  New 'line' coverage: 2453
+  New 'line' coverage: 2544
+  New 'line' coverage: 2546
+  New 'line' coverage: 2786
+  New 'line' coverage: 2787
+  New 'line' coverage: 3561
+  New 'line' coverage: 3562
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tcc.h
+  New 'function' coverage: toup()
+  New 'line' coverage: 1266
+  New 'line' coverage: 1267

@@ -1,0 +1,10 @@
+Error: inline assembly is unsupported
+File: _asm.c
+Line: 13
+assembly.ll line: 8796
+State: 1
+Stack: 
+	#000008796 in __klee_posix_wrapped_main () at _asm.c:13
+	#100007072 in __user_main (=1, =94006642995456, =94006642995472) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#200000522 in __uClibc_main (=94006644192520, =1, =94006642995456, =0, =0, =0, =0) at libc/misc/internals/__uClibc_main.c:401
+	#300000687 in main (=1, =94006642995456)

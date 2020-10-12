@@ -1,0 +1,3 @@
+afl_cov_pid     : 63556
+afl_cov_version : 0.6.2
+command_line    : /root/git/cs6888/assign1/afl-cov/afl-cov -d afl_output --live --coverage-cmd /root/git/cs6888/assign1/tcc-0.9.27-cov/tcc -I /root/git/cs6888/assign1/tcc-0.9.27/lib/tcc/include -o hello  AFL_FILE --code-dir /root/git/cs6888/assign1/tcc-0.9.27-cov

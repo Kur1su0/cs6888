@@ -1,0 +1,4 @@
+diff id:000167,src:000125,op:flip4,pos:4,+cov -> id:000168,src:000155,op:flip1,pos:7,+cov
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccpp.c
+  New 'line' coverage: 796
+  New 'line' coverage: 797

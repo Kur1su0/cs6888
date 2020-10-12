@@ -1,0 +1,19 @@
+diff id:000015,orig:07_function.expect -> id:000016,orig:08_while.c
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccgen.c
+  New 'line' coverage: 5923
+  New 'line' coverage: 5924
+  New 'line' coverage: 5925
+  New 'line' coverage: 5926
+  New 'line' coverage: 5927
+  New 'line' coverage: 5928
+  New 'line' coverage: 5929
+  New 'line' coverage: 5930
+  New 'line' coverage: 5931
+  New 'line' coverage: 5932
+  New 'line' coverage: 5933
+  New 'line' coverage: 5934
+  New 'line' coverage: 5935
+  New 'line' coverage: 5936
+  New 'line' coverage: 5937
+  New 'line' coverage: 5938
+  New 'line' coverage: 5939

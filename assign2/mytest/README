@@ -1,0 +1,10 @@
+README
+
+1.*.c is the benchmark program
+2.sample_output contains the possible output incase the .c files are not working.
+3.sample_output/log contains the program runtime & branch coverage info.
+
+HOW TO RUN
+1. COMPILE: make all.
+2. RUN WITH KLEE: make run_klee (or sh run_klee.sh).
+3. output will show on the terminal. 

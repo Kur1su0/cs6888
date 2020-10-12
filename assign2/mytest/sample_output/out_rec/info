@@ -1,0 +1,22 @@
+klee --output-dir=out_rec rec.bc
+PID: 39197
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2020-10-06 22:38:14
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2020-10-06 22:38:24
+Elapsed: 00:00:10
+KLEE: done: explored paths = 588
+KLEE: done: avg. constructs per query = 2217
+KLEE: done: total queries = 1175
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 1175
+KLEE: done: query cex = 1175
+
+KLEE: done: total instructions = 693838
+KLEE: done: completed paths = 588
+KLEE: done: generated tests = 588

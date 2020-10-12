@@ -1,0 +1,3 @@
+KLEE: Using STP solver backend
+KLEE: ERROR: _asm.c:13: inline assembly is unsupported
+KLEE: NOTE: now ignoring this error at this location

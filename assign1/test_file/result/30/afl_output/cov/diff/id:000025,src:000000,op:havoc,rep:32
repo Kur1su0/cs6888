@@ -1,0 +1,5 @@
+diff id:000024,src:000000,op:havoc,rep:4 -> id:000025,src:000000,op:havoc,rep:32
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccgen.c
+  New 'line' coverage: 7240
+  New 'line' coverage: 7242
+  New 'line' coverage: 7243

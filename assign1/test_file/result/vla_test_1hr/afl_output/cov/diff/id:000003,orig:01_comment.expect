@@ -1,0 +1,4 @@
+diff id:000002,orig:01_comment.c -> id:000003,orig:01_comment.expect
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccelf.c
+  New 'line' coverage: 3038
+  New 'line' coverage: 3053

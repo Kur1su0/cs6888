@@ -1,0 +1,7 @@
+diff id:000048,orig:test1 -> id:000049,orig:test2
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccpp.c
+  New 'line' coverage: 102
+  New 'line' coverage: 549
+  New 'line' coverage: 550
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccgen.c
+  New 'line' coverage: 7170

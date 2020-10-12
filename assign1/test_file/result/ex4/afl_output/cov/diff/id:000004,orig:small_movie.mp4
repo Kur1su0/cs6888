@@ -1,0 +1,7 @@
+diff id:000003,orig:mut2 -> id:000004,orig:small_movie.mp4
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccelf.c
+  New 'line' coverage: 3031
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/libtcc.c
+  New 'line' coverage: 1060
+  New 'line' coverage: 493
+  New 'line' coverage: 494

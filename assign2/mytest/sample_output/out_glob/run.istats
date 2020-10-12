@@ -1,0 +1,45 @@
+version: 1
+creator: klee
+pid: 39189
+cmd: glob.bc
+
+
+positions: instr line
+event: Icov : CoveredInstructions
+event: Forks : Forks
+event: Ireal : InstructionRealTimes
+event: Itime : InstructionTimes
+event: I : Instructions
+event: UCdist : MinDistToUncovered
+event: Rtime : ResolveTime
+event: States : States
+event: Iuncov : UncoveredInstructions
+event: Q : Queries
+event: Qiv : QueriesInvalid
+event: Qv : QueriesValid
+event: Qtime : QueryTime
+events: Icov Forks Ireal Itime I UCdist Rtime States Iuncov Q Qiv Qv Qtime 
+ob=assembly.ll
+fl=glob.c
+fn=glob_comp
+14 6 1 0 0 0 1 0 0 0 0 0 0 0 0 
+15 8 1 0 0 0 1 0 0 0 0 0 0 0 0 
+16 8 1 0 0 0 1 0 0 0 0 0 0 0 0 
+17 8 1 0 0 0 1 0 0 0 0 0 0 0 0 
+18 8 1 1 0 0 1 0 0 0 0 2 2 0 3132 
+21 8 1 0 0 0 1 0 0 0 0 0 0 0 0 
+22 8 1 0 0 0 1 0 0 0 0 0 0 0 0 
+25 9 1 0 0 0 1 0 0 0 0 0 0 0 0 
+26 9 1 0 0 0 1 0 0 0 0 0 0 0 0 
+29 10 1 0 0 0 2 0 0 0 0 0 0 0 0 
+30 10 1 0 0 0 2 0 0 0 0 0 0 0 0 
+fn=main
+36 12 1 0 0 0 1 0 0 0 0 0 0 0 0 
+37 12 1 0 0 0 1 0 0 0 0 0 0 0 0 
+38 14 1 0 0 0 1 0 0 0 0 0 0 0 0 
+39 15 1 0 0 0 1 0 0 0 0 0 0 0 0 
+40 16 1 0 0 0 1 0 0 0 0 0 0 0 0 
+cfn=glob_comp
+calls=1 11 6
+40 16 11 1 0 0 13 0 0 0 0 2 2 0 3132 
+41 16 1 0 0 0 2 0 0 0 0 0 0 0 0 

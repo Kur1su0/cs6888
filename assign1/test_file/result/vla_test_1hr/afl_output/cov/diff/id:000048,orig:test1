@@ -1,0 +1,9 @@
+diff id:000047,orig:mut1.c -> id:000048,orig:test1
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccpp.c
+  New 'function' coverage: expect()
+  New 'line' coverage: 106
+  New 'line' coverage: 108
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccgen.c
+  New 'line' coverage: 7173
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/libtcc.c
+  New 'line' coverage: 1088

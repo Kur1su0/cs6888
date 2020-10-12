@@ -1,0 +1,13 @@
+Error: concretized symbolic size
+File: alloc_mem.c
+Line: 7
+assembly.ll line: 22
+State: 3
+Stack: 
+	#000000022 in call_malloc (n) at alloc_mem.c:7
+	#100000136 in main () at alloc_mem.c:31
+Info: 
+  size expr: (Mul w64 4
+                       (SExt w64 (ReadLSB w32 0 n)))
+  concretization : 0
+  unbound example: 4

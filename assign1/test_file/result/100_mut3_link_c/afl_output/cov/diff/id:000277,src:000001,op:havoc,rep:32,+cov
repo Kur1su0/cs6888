@@ -1,0 +1,18 @@
+diff id:000276,src:000001,op:havoc,rep:8 -> id:000277,src:000001,op:havoc,rep:32,+cov
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccpp.c
+  New 'function' coverage: parse_line_comment()
+  New 'line' coverage: 2918
+  New 'line' coverage: 2919
+  New 'line' coverage: 2920
+  New 'line' coverage: 2925
+  New 'line' coverage: 2926
+  New 'line' coverage: 2927
+  New 'line' coverage: 2928
+  New 'line' coverage: 714
+  New 'line' coverage: 718
+  New 'line' coverage: 720
+  New 'line' coverage: 721
+  New 'line' coverage: 722
+  New 'line' coverage: 724
+  New 'line' coverage: 744
+  New 'line' coverage: 747

@@ -1,0 +1,45 @@
+diff id:000000,orig:00_assignment.c -> id:000001,orig:00_assignment.expect
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccelf.c
+  New 'line' coverage: 3031
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/libtcc.c
+  New 'function' coverage: error1()
+  New 'function' coverage: strcat_printf()
+  New 'function' coverage: strcat_vprintf()
+  New 'function' coverage: tcc_error_noabort()
+  New 'line' coverage: 1060
+  New 'line' coverage: 461
+  New 'line' coverage: 464
+  New 'line' coverage: 465
+  New 'line' coverage: 466
+  New 'line' coverage: 468
+  New 'line' coverage: 471
+  New 'line' coverage: 472
+  New 'line' coverage: 473
+  New 'line' coverage: 474
+  New 'line' coverage: 476
+  New 'line' coverage: 481
+  New 'line' coverage: 483
+  New 'line' coverage: 485
+  New 'line' coverage: 486
+  New 'line' coverage: 489
+  New 'line' coverage: 493
+  New 'line' coverage: 494
+  New 'line' coverage: 499
+  New 'line' coverage: 502
+  New 'line' coverage: 503
+  New 'line' coverage: 505
+  New 'line' coverage: 507
+  New 'line' coverage: 510
+  New 'line' coverage: 511
+  New 'line' coverage: 512
+  New 'line' coverage: 516
+  New 'line' coverage: 517
+  New 'line' coverage: 518
+  New 'line' coverage: 528
+  New 'line' coverage: 530
+  New 'line' coverage: 533
+  New 'line' coverage: 534
+  New 'line' coverage: 535
+  New 'line' coverage: 536
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tcc.c
+  New 'line' coverage: 333

@@ -1,0 +1,19 @@
+diff id:000009,src:000000,op:flip1,pos:5,+cov -> id:000010,src:000000,op:flip2,pos:2,+cov
+Src file: /root/git/cs6888/assign1/tcc-0.9.27-cov/tccpp.c
+  New 'function' coverage: handle_stray_noerror()
+  New 'function' coverage: inp()
+  New 'line' coverage: 620
+  New 'line' coverage: 622
+  New 'line' coverage: 624
+  New 'line' coverage: 626
+  New 'line' coverage: 629
+  New 'line' coverage: 631
+  New 'line' coverage: 632
+  New 'line' coverage: 633
+  New 'line' coverage: 636
+  New 'line' coverage: 643
+  New 'line' coverage: 644
+  New 'line' coverage: 669
+  New 'line' coverage: 670
+  New 'line' coverage: 671
+  New 'line' coverage: 672

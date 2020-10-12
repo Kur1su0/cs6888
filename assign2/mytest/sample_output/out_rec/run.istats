@@ -1,0 +1,62 @@
+version: 1
+creator: klee
+pid: 39197
+cmd: rec.bc
+
+
+positions: instr line
+event: Icov : CoveredInstructions
+event: Forks : Forks
+event: Ireal : InstructionRealTimes
+event: Itime : InstructionTimes
+event: I : Instructions
+event: UCdist : MinDistToUncovered
+event: Rtime : ResolveTime
+event: States : States
+event: Iuncov : UncoveredInstructions
+event: Q : Queries
+event: Qiv : QueriesInvalid
+event: Qv : QueriesValid
+event: Qtime : QueryTime
+events: Icov Forks Ireal Itime I UCdist Rtime States Iuncov Q Qiv Qv Qtime 
+ob=assembly.ll
+fl=rec.c
+fn=f
+11 5 1 0 0 0 587 0 0 0 0 0 0 0 0 
+12 5 1 0 0 0 587 0 0 0 0 0 0 0 0 
+13 5 1 0 0 0 587 0 0 0 0 0 0 0 0 
+14 5 1 0 0 0 587 0 0 0 0 0 0 0 0 
+15 8 1 0 0 0 587 0 0 0 0 0 0 0 0 
+16 8 1 0 0 0 587 0 0 0 0 0 0 0 0 
+17 8 1 0 0 0 587 0 0 0 0 0 0 0 0 
+18 8 1 0 0 0 587 0 0 0 0 0 0 0 0 
+19 8 1 0 0 0 587 0 0 0 0 0 0 0 0 
+20 8 1 587 0 0 587 0 0 0 0 673 673 0 4907536 
+23 9 1 0 0 0 586 0 0 0 0 0 0 0 0 
+24 9 1 0 0 0 586 0 0 0 0 0 0 0 0 
+27 13 1 0 0 0 586 0 0 0 0 0 0 0 0 
+28 13 1 0 0 0 586 0 0 0 0 0 0 0 0 
+29 13 1 0 0 0 586 0 0 0 0 0 0 0 0 
+30 13 1 0 0 0 586 0 0 0 0 0 0 0 0 
+cfn=f
+calls=586 8 5
+30 13 0 586 0 0 690798 0 0 0 0 671 671 0 4902216 
+31 13 1 0 0 0 136588 0 0 0 0 0 0 0 0 
+32 13 1 0 0 0 136574 0 0 0 0 0 0 0 0 
+33 13 1 0 0 0 136551 0 0 0 0 0 0 0 0 
+36 14 1 0 0 0 137121 0 0 0 0 0 0 0 0 
+37 14 1 0 0 0 137106 0 0 0 0 0 0 0 0 
+fn=main
+46 17 1 0 0 0 1 0 0 0 0 0 0 0 0 
+47 17 1 0 0 0 1 0 0 0 0 0 0 0 0 
+48 17 1 0 0 0 1 0 0 0 0 0 0 0 0 
+49 19 1 0 0 0 1 0 0 0 0 0 0 0 0 
+50 19 1 0 0 0 1 0 0 0 0 0 0 0 0 
+51 20 1 0 0 0 1 0 0 0 0 0 0 0 0 
+52 20 1 0 0 0 1 0 0 0 0 0 0 0 0 
+53 21 1 0 0 0 1 0 0 0 0 0 0 0 0 
+54 21 1 0 0 0 1 0 0 0 0 0 0 0 0 
+cfn=f
+calls=1 8 5
+54 21 21 587 0 0 693326 0 0 0 0 673 673 0 4907536 
+55 21 1 0 0 0 503 0 0 0 0 502 502 0 882424 
