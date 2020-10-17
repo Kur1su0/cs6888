@@ -1,0 +1,13 @@
+Found 1 issue
+
+Hello.java:13: error: NULL_DEREFERENCE
+  object `s` last assigned on line 12 could be null and is dereferenced at line 13.
+  11.     int test() {
+  12.       String s = null;
+  13. >     return s.length();
+  14.     }
+  15.   }
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

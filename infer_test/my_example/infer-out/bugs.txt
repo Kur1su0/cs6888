@@ -1,0 +1,13 @@
+Found 1 issue
+
+deadlock.cpp:18: error: DEADLOCK
+  Potential deadlock. `MsgManage::InMsg` (Trace 1) and `MsgManage::outMsgProc` (Trace 2) acquire locks `this.myMutex2` in `class MsgManage` and `this.myMutex1` in `class MsgManage` in reverse orders. Additional report(s) on the same line were suppressed.
+  16.   		{
+  17.   			cout << "insert elts: " << i << endl;
+  18. > 			myMutex1.lock();     //loc1, then loc2
+  19.   			myMutex2.lock();
+  20.   			myList.push_back(i);
+
+Summary of the reports
+
+  DEADLOCK: 1

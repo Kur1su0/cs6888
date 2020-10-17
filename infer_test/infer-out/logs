@@ -1,0 +1,29 @@
+[21][environment] CWD = /opt/infer-linux64-v0.14.0/infer_test
+[21][environment] Read configuration in /opt/infer-linux64-v0.14.0/.inferconfig
+[21][environment] Project root = /opt/infer-linux64-v0.14.0/infer_test
+[21][environment] INFER_ARGS =   
+[21][environment] command line arguments:   infer -- gcc -c test.c
+[21][environment] Analyzer: checkers
+[21][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[21][environment] Infer log identifier is 
+Infer version v0.14.0
+[21][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[21][environment] 
+[21][   progress] Capturing in make/cc mode...
+[21][      debug] 
+[21][      debug] *** Beginning capture of file /opt/infer-linux64-v0.14.0/infer_test/test.c ***
+[21][      debug] Clang frontend action is translating and linting
+[21][      debug] Loading the following linters files: /opt/infer-linux64-v0.14.0/infer/bin/../lib/linter_rules/linters.al
+[21][      debug] Elapsed: 1.368s.
+[21][      debug] 
+[21][   progress] Found 1 source file to analyze in /opt/infer-linux64-v0.14.0/infer_test/infer-out
+[21][   progress] Starting analysis...
+[21][   progress] 
+[21][   progress] legend:
+[21][   progress]   "F" analyzing a file
+[21][   progress]   "." analyzing a procedure
+[21][   progress] 
+[21][   progress] 
+[21][environment] Per-procedure parallelism jobs: 12
+[21][   progress] F
+[30][   progress] .

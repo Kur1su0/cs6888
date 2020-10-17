@@ -1,0 +1,31 @@
+[407][environment] CWD = /opt/infer-linux64-v0.14.0/examples
+[407][environment] Read configuration in /opt/infer-linux64-v0.14.0/.inferconfig
+[407][environment] Project root = /opt/infer-linux64-v0.14.0/examples
+[407][environment] INFER_ARGS =   @/tmp/args.tmp.53d622
+[407][environment]   ++Contents of '/tmp/args.tmp.53d622':
+[407][environment]     -o /infer_test/out/
+[407][environment]   
+[407][environment] command line arguments:   infer -o /infer_test/out/ -- javac Hello.java
+[407][environment] Analyzer: checkers
+[407][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[407][environment] Infer log identifier is 
+Infer version v0.14.0
+[407][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[407][environment] 
+[407][   progress] Capturing in javac mode...
+[407][      debug] Current working directory: '/opt/infer-linux64-v0.14.0/examples'
+[407][      debug] Trying to execute: javac '-J-Duser.language=en' '@/tmp/args_.tmp.449b13' 2>'/tmp/javac.tmp.b9444b.out'
+[407][      debug] *** Success. Logs:
+[407][      debug] Translating 1 source files (1 classes)
+[407][      debug] done capturing all files
+[407][   progress] Found 1 source file to analyze in /infer_test/out/
+[407][   progress] Starting analysis...
+[407][   progress] 
+[407][   progress] legend:
+[407][   progress]   "F" analyzing a file
+[407][   progress]   "." analyzing a procedure
+[407][   progress] 
+[407][   progress] 
+[407][environment] Per-procedure parallelism jobs: 4
+[407][   progress] F
+[428][   progress] ..

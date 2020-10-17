@@ -1,0 +1,22 @@
+Procedure: res_leak
+void res_leak()
+Analyzed
+ERRORS: DEAD_STORE RESOURCE_LEAK 
+WARNINGS: 
+FAILURE:NONE SYMOPS:20
+Biabduction: phase= RE_EXECUTION
+
+RacerD: 
+Threads: NoThread, Locks: { } 
+Accesses { } 
+Ownership: Unowned 
+Return Attributes: { } 
+
+Siof: ({ },
+{ })
+Starvation: {events= { }; guard_map= { }; lock_state= { };  order= { }; ui= ⊥}
+Uninitialised: 
+ Pre: { } 
+Post: { } 
+
+
