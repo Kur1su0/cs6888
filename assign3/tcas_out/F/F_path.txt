@@ -1,0 +1,13 @@
+tcas_out/F/151.c.gcov
+tcas_out/F/171.c.gcov
+tcas_out/F/197.c.gcov
+tcas_out/F/490.c.gcov
+tcas_out/F/543.c.gcov
+tcas_out/F/610.c.gcov
+tcas_out/F/813.c.gcov
+tcas_out/F/882.c.gcov
+tcas_out/F/922.c.gcov
+tcas_out/F/1179.c.gcov
+tcas_out/F/1460.c.gcov
+tcas_out/F/1461.c.gcov
+tcas_out/F/1462.c.gcov

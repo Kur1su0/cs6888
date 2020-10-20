@@ -1,36 +1,36 @@
-[214342][environment] CWD = /root/git/cs6888/infer_test/my_example
-[214342][environment] No .inferconfig file found
-[214342][environment] Project root = /root/git/cs6888/infer_test/my_example
-[214342][environment] INFER_ARGS =   @/tmp/args.tmp.91085f  ++Contents of '/tmp/args.tmp.91085f':
-[214342][environment]                                         run
-[214342][environment]                                       
-[214342][environment] command line arguments:   infer run -- g++ deadlock.cpp -pthreadActive checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
-[214342][environment] Infer log identifier is 
+[296989][environment] CWD = /root/git/cs6888/infer_test/my_example
+[296989][environment] No .inferconfig file found
+[296989][environment] Project root = /root/git/cs6888/infer_test/my_example
+[296989][environment] INFER_ARGS =   @/tmp/args.tmp.cc5f86  ++Contents of '/tmp/args.tmp.cc5f86':
+[296989][environment]                                         run
+[296989][environment]                                       
+[296989][environment] command line arguments:   infer run -- gcc check_malloc.cActive checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[296989][environment] Infer log identifier is 
 Infer version v0.17.0
-[214342][environment] Copyright 2009 - present Facebook. All Rights Reserved.
-[214342][environment] 
-[214342][   progress] Capturing in make/cc mode...
-[214342][      debug] 
-[214342][      debug] *** Beginning capture of file /root/git/cs6888/infer_test/my_example/deadlock.cpp ***
-[214342][      debug] Clang frontend action is translating and linting
-[214342][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
-[214342][      debug] Elapsed: 644ms.
-[214342][      debug] 
-[214342][   progress] Found 1 source file to analyze in /root/git/cs6888/infer_test/my_example/infer-out
-[214342][environment] Parallel jobs: 12
-[214351][   progress] deadlock.cpp starting
-[214351][   progress] deadlock.cpp DONE
-[214342][   progress] 
-[214342][   progress] Analysis finished in 1.737ss
-[214342][      debug] collected stats:
-[214342][      debug] Backend stats:
-[214342][      debug]   summary_file_try_load= 1282
-[214342][      debug]   summary_read_from_disk= 0
-[214342][      debug]   summary_cache_hits= 234 (26%)
-[214342][      debug]   summary_cache_misses= 641
-[214342][      debug]   summary_has_model_queries= 0
-[214342][      debug]   ondemand_procs_analyzed= 7
-[214342][      debug]   ondemand_local_cache_hits= 406 (94%)
-[214342][      debug]   ondemand_local_cache_misses= 24
-[214342][      debug]   
-[214342][      debug] 
+[296989][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[296989][environment] 
+[296989][   progress] Capturing in make/cc mode...
+[296989][      debug] 
+[296989][      debug] *** Beginning capture of file /root/git/cs6888/infer_test/my_example/check_malloc.c ***
+[296989][      debug] Clang frontend action is translating and linting
+[296989][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[296989][      debug] Elapsed: 32.7ms.
+[296989][      debug] 
+[296989][   progress] Found 1 source file to analyze in /root/git/cs6888/infer_test/my_example/infer-out
+[296989][environment] Parallel jobs: 12
+[296998][   progress] check_malloc.c starting
+[296998][   progress] check_malloc.c DONE
+[296989][   progress] 
+[296989][   progress] Analysis finished in 191mss
+[296989][      debug] collected stats:
+[296989][      debug] Backend stats:
+[296989][      debug]   summary_file_try_load= 38
+[296989][      debug]   summary_read_from_disk= 3
+[296989][      debug]   summary_cache_hits= 75 (79%)
+[296989][      debug]   summary_cache_misses= 19
+[296989][      debug]   summary_has_model_queries= 0
+[296989][      debug]   ondemand_procs_analyzed= 6
+[296989][      debug]   ondemand_local_cache_hits= 23 (69%)
+[296989][      debug]   ondemand_local_cache_misses= 10
+[296989][      debug]   
+[296989][      debug] 

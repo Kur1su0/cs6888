@@ -1,13 +1,48 @@
-Found 1 issue
+Found 5 issues
 
-deadlock.cpp:18: error: DEADLOCK
-  Potential deadlock. `MsgManage::InMsg` (Trace 1) and `MsgManage::outMsgProc` (Trace 2) acquire locks `this.myMutex2` in `class MsgManage` and `this.myMutex1` in `class MsgManage` in reverse orders. Additional report(s) on the same line were suppressed.
-  16.   		{
-  17.   			cout << "insert elts: " << i << endl;
-  18. > 			myMutex1.lock();     //loc1, then loc2
-  19.   			myMutex2.lock();
-  20.   			myList.push_back(i);
+check_malloc.c:32: error: DEAD_STORE
+  The value written to &i (type int) is never used.
+  30.   
+  31.   void dead_store(){
+  32. > 	int i = 10;
+  33.   
+  34.   }
+
+check_malloc.c:38: error: DEAD_STORE
+  The value written to &fp (type _IO_FILE*) is never used.
+  36.   void res_leak(){
+  37.   	FILE *fp;
+  38. > 	fp=fopen("run_malloc.sh","r");
+  39.   }
+  40.   
+
+check_malloc.c:38: error: RESOURCE_LEAK
+  resource of type `_IO_FILE` acquired by call to `fopen()` at line 38, column 5 is not released after line 38, column 2.
+  36.   void res_leak(){
+  37.   	FILE *fp;
+  38. > 	fp=fopen("run_malloc.sh","r");
+  39.   }
+  40.   
+
+check_malloc.c:47: error: MEMORY_LEAK
+  memory dynamically allocated by call to `call_calloc()` at line 44, column 8 is not reachable after line 47, column 2.
+  45.   	ptr[0]=MAX_NUM;
+  46.   	ptr=out_of_bound_opt(ptr);
+  47. > 	printf("%d\n",ptr[0]);
+  48.   	
+  49.   	//FREE(&ptr);
+
+check_malloc.c:45: error: NULL_DEREFERENCE
+  pointer `ptr` last assigned on line 44 could be null and is dereferenced at line 45, column 2.
+  43.   	int *ptr;
+  44.   	ptr = call_calloc(ptr);
+  45. > 	ptr[0]=MAX_NUM;
+  46.   	ptr=out_of_bound_opt(ptr);
+  47.   	printf("%d\n",ptr[0]);
 
 Summary of the reports
 
-  DEADLOCK: 1
+        DEAD_STORE: 2
+       MEMORY_LEAK: 1
+     RESOURCE_LEAK: 1
+  NULL_DEREFERENCE: 1
