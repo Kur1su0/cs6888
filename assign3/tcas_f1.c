@@ -143,7 +143,7 @@ int main(argc, argv)
 int argc;
 char *argv[];
 {
-    if(argc < 13)
+    if(argc < 1)
     {
 	fprintf(stdout, "Error: Command line arguments");
 	exit(1);

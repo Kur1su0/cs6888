@@ -2,7 +2,8 @@
 
 total_line=$(wc -l testcase | awk -F ' ' '{print $1}')
 
-
+make clean
+make 
 rm -r tcas_out
 mkdir tcas_out
 mkdir tcas_out/P/
@@ -14,9 +15,9 @@ Error_command=1579
 
 for i in {1..1608}
 do
-	val=`sed -n ${i}p runtests.sh|bash |awk -F ':' '{print $2}'`
+	val=`sed -n ${i}p runtests.sh|bash |awk -F ':' '{print $2}'` > /dev/null
 	#echo $val
-	gcov tcas.c # > /dev/null
+	gcov tcas.c  > /dev/null
 	echo $i $val 
 	if [ $val == 'P' ] 
 	then 
@@ -33,6 +34,10 @@ do
 
 	fi
 	rm *.gcda
-	
 
 done
+make clean
+
+sh run_py.sh
+
+

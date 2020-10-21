@@ -5,7 +5,7 @@ import copy
 
 Pass_dir=''
 Fail_dir=''
-TOTAL_LINE_NUM = 167
+TOTAL_LINE_NUM = 168
 #P_list=[[0 for i in range(2)] for j in range (TOTAL_LINE_NUM)]
 #F_list=[[0 for i in range(2)] for j in range (TOTAL_LINE_NUM)]
 #P_hit_list=[for i in range(TOTAL_LINE_NUM)]
@@ -16,7 +16,7 @@ F_file_list=[]
 
 is_gen_statement = 0
 statment_list = []
-
+line104_hit = []
 
 def parse_arg():
     global Pass_dir,Fail_dir
@@ -37,6 +37,7 @@ def parse_arg():
 
 def comp_num_hit(hit_list,file_path):
     global is_gen_statement,statment_list
+    global line104_hit
     #print(hit_list)
     with open(file_path,'r') as fp:
         lines = fp.readlines()[4:]
@@ -50,7 +51,9 @@ def comp_num_hit(hit_list,file_path):
             statment_list.append(line_statement)
 
 
-        if line_hit_state != '#####' and line_hit_state != '-':
+        if line_hit_state != '#####'and line_hit_state != '-':
+            #if int(line_num) == 104:
+                #line104_hit.append(file_path)
             #print(line_hit_state,"at",int(line_num))
             index = int(line_num) - 1
             if hit_list[index] == -1:
@@ -105,21 +108,26 @@ def get_cov(P_file_list,F_file_list,statment_list):
     
     
     #4. Cal cov
+    #for i in range(len(P_hit_list)):
+    #    print(" (",F_hit_list[i],"-",(float)(P_hit_list[i]/(total_pass+1)),") ",end='')
     #print(P_hit_list)
     #print(F_hit_list)
     #formula 
 
-    # [F(s) -P(s)  ]/ [p+1]
+    # S(s) = [F(s) -P(s)  ]/ [p+1]
     total_pass = len(P_file_list)
     print("TOTAL P:",total_pass)
     print("TOTAL F:",len(F_file_list))
     
+    #ef/(ef+ep)
     
-
-    for i in range(len(P_hit_list)):
-        if (P_hit_list[i]!=-1 and F_hit_list[i]!=-1):
-            suspiciousness_list[i] = (F_hit_list[i]-P_hit_list[i])
-            suspiciousness_list[i] = (float)(suspiciousness_list[i]/(total_pass+1))
+    for i in range(len(F_hit_list)):
+        if (F_hit_list[i]!=-1 and F_hit_list[i]!=0):
+            print('line',i+1, F_hit_list[i], '-',( P_hit_list[i]/(total_pass+1) ) )
+            suspiciousness_list[i] = (F_hit_list[i]- (float)(P_hit_list[i]/(total_pass+1) ) )
+            #suspiciousness_list[i] = (F_hit_list[i]/(F_hit_list[i]+P_hit_list[i]))
+        
+    print(suspiciousness_list)
 
     #5. put into dict
     _line_num = list(range(1,TOTAL_LINE_NUM+1))
@@ -133,30 +141,36 @@ def get_cov(P_file_list,F_file_list,statment_list):
             del dict_suspiciousness[key]
 
 
+    _tuple = sorted(dict_suspiciousness.items(), key=lambda item:item[1], reverse=True)
 
-    _tuple =sorted(dict_suspiciousness.items(), key=lambda item:item[1], reverse=True)
-    for i in range(10):
-        print(i+1, _tuple[i],statment_list[_tuple[i][0]-1])
-    print("-------------------")
+    #_tuple =sorted(dict_suspiciousness.items(), key=lambda item:item[1])
+    #for i in range(10):
+    #    print(i+1, _tuple[i],statment_list[_tuple[i][0]-1])
+   
+    #line number for statement s, quote of statement s, #failedTests(s), #passedTests(s), totalpassed, S(s)
+    print("Top  line    statement   #Pass  #Fail    #totalPass  susp_val")
+    for i in range( 10):
+        line_number,pred = _tuple[i] 
+        print(i+1,',',line_number ,statment_list[_tuple[i][0]-1], F_hit_list[_tuple[i][0]-1], P_hit_list[_tuple[i][0]-1],len(P_file_list) ,pred)
 
 
-
-    #return sorted(dict_suspiciousness.items(), key=lambda item:item[1], reverse=True)
-    return sorted(dict_suspiciousness.items(), key=lambda item:item[1])
+    return _tuple
     
 
 
 
 
-def get_poss_statement(poss_dict,statment_list):
-    for i in range(10):
-        print(i+1, poss_dict[i],statment_list[poss_dict[i][0]-1])
-
+def print_poss_statement(_tuple,statment_list,P_hit_list,F_hit_list):
+    print("Top  (line#,susp)        statement   #P hit  #F hit")
+    for i in range( len(_tuple)):
+        print(i+1,',',_tuple[i],statment_list[_tuple[i][0]-1], F_hit_list[_tuple[i][0]-1], P_hit_list[_tuple[i][0]-1] )
+#line number for statement s, quote of statement s, #failedTests(s), #passedTests(s), totalpassed, S(s)
 
 
 
 def main():
     global Pass_dir,Fail_dir,P_file_list,F_file_list, statment_list
+    global line104_hit
     parse_arg()
 
     P_file_list=get_file_list(Pass_dir)
@@ -165,12 +179,14 @@ def main():
     poss_dict=get_cov(P_file_list,F_file_list,statment_list)
     #print(poss_dict)
 
-    get_poss_statement(poss_dict,statment_list)
+    #print_poss_statement(poss_dict,statment_list.P_hit_list,F_hit_list)
 
     #print(statment_list)
     
     #print(F_file_list)
     #read_file(P_list)
+    for i in range(len(line104_hit)):
+        print(line104_hit[i])
 
 if __name__ == "__main__":
     main()
