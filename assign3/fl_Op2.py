@@ -33,7 +33,7 @@ def parse_arg():
         sys.exit("fail dir not found")
 
 
-    print("found:\n","PASS dir:  ",Pass_dir,"\n","FAIL dir: ",Fail_dir,"\n")
+    #print("found:\n","PASS dir:  ",Pass_dir,"\n","FAIL dir: ",Fail_dir,"\n")
 
 def comp_num_hit(hit_list,file_path):
     global is_gen_statement,statment_list
@@ -116,18 +116,18 @@ def get_cov(P_file_list,F_file_list,statment_list):
 
     # S(s) = [F(s) -P(s)  ]/ [p+1]
     total_pass = len(P_file_list)
-    print("TOTAL P:",total_pass)
-    print("TOTAL F:",len(F_file_list))
+    #print("TOTAL P:",total_pass)
+    #print("TOTAL F:",len(F_file_list))
     
     #ef/(ef+ep)
     
     for i in range(len(F_hit_list)):
         if (F_hit_list[i]!=-1 and F_hit_list[i]!=0):
-            print('line',i+1, F_hit_list[i], '-',( P_hit_list[i]/(total_pass+1) ) )
+            #print('line',i+1, F_hit_list[i], '-',( P_hit_list[i]/(total_pass+1) ) )
             suspiciousness_list[i] = (F_hit_list[i]- (float)(P_hit_list[i]/(total_pass+1) ) )
             #suspiciousness_list[i] = (F_hit_list[i]/(F_hit_list[i]+P_hit_list[i]))
         
-    print(suspiciousness_list)
+    #print(suspiciousness_list)
 
     #5. put into dict
     _line_num = list(range(1,TOTAL_LINE_NUM+1))
@@ -148,10 +148,18 @@ def get_cov(P_file_list,F_file_list,statment_list):
     #    print(i+1, _tuple[i],statment_list[_tuple[i][0]-1])
    
     #line number for statement s, quote of statement s, #failedTests(s), #passedTests(s), totalpassed, S(s)
-    print("Top  line    statement   #Pass  #Fail    #totalPass  susp_val")
+    print( '{:<5}{:<5}{:<70}{:<5} {:<5} {:<5} {:<5}'.format("Top","line","statement","#Pass", "#Fail","#T_Pass","susp_val"))
     for i in range( 10):
-        line_number,pred = _tuple[i] 
-        print(i+1,',',line_number ,statment_list[_tuple[i][0]-1], F_hit_list[_tuple[i][0]-1], P_hit_list[_tuple[i][0]-1],len(P_file_list) ,pred)
+        line_number,pred = _tuple[i]
+        stateM = statment_list[line_number-1]
+        if(len(stateM)>0):
+            new_st = ':'.join(stateM)
+        else:
+            new_st = stateM[0]
+        new_st = new_st.strip()
+        #print('{}'.format(new_st) )
+        #print(i+1,',',line_number,',',statment_list[_tuple[i][0]-1], F_hit_list[_tuple[i][0]-1], P_hit_list[_tuple[i][0]-1],len(P_file_list) ,pred)
+        print('{:<5},{:<5},{:<70},{:<5},{:<5},{:<5},{:<5}'.format(i+1,line_number,new_st, F_hit_list[line_number-1], P_hit_list[line_number-1],len(P_file_list),pred) )
 
 
     return _tuple
