@@ -1,2 +1,1 @@
-python3 fl_Op2.py /root/git/cs6888/assign3/tcas_out/P /root/git/cs6888/assign3/tcas_out/F
-#python3 fl_Op2.py /root/git/cs6888/assign3/P /root/git/cs6888/assign3/F
+python3 fl_Op2.py tcas_out/P tcas_out/F

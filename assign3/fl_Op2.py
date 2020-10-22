@@ -5,11 +5,6 @@ import copy
 
 Pass_dir=''
 Fail_dir=''
-TOTAL_LINE_NUM = 168
-#P_list=[[0 for i in range(2)] for j in range (TOTAL_LINE_NUM)]
-#F_list=[[0 for i in range(2)] for j in range (TOTAL_LINE_NUM)]
-#P_hit_list=[for i in range(TOTAL_LINE_NUM)]
-#F_hit_list=[for i in range(TOTAL_LINE_NUM)]
 
 P_file_list=[]
 F_file_list=[]
@@ -92,10 +87,18 @@ def get_num_hit(file_list,hit_list):
         hit_list=comp_num_hit(hit_list,file_list[i])
 
     return hit_list
+def get_total_line_code(file_path):
+    with open(file_path,'r') as fp:
+        lines = fp.readlines()[4:]
+    #print( "TOTAL LINE:",len(lines) )
+    return len(lines)
+
+    
 
 
 
 def get_cov(P_file_list,F_file_list,statment_list):
+    TOTAL_LINE_NUM = get_total_line_code(P_file_list[0])
     #1.init P & F hit list
     P_hit_list=[-1 for i in range(TOTAL_LINE_NUM)]
     F_hit_list=[-1 for i in range(TOTAL_LINE_NUM)]
@@ -114,7 +117,9 @@ def get_cov(P_file_list,F_file_list,statment_list):
     #print(F_hit_list)
     #formula 
 
-    # S(s) = [F(s) -P(s)  ]/ [p+1]
+    # S(s) = [F(s)] -  [ P(s)  / p+1]
+    
+    
     total_pass = len(P_file_list)
     #print("TOTAL P:",total_pass)
     #print("TOTAL F:",len(F_file_list))
@@ -122,7 +127,7 @@ def get_cov(P_file_list,F_file_list,statment_list):
     #ef/(ef+ep)
     
     for i in range(len(F_hit_list)):
-        if (F_hit_list[i]!=-1 and F_hit_list[i]!=0):
+        if (F_hit_list[i]!=-1):
             #print('line',i+1, F_hit_list[i], '-',( P_hit_list[i]/(total_pass+1) ) )
             suspiciousness_list[i] = (F_hit_list[i]- (float)(P_hit_list[i]/(total_pass+1) ) )
             #suspiciousness_list[i] = (F_hit_list[i]/(F_hit_list[i]+P_hit_list[i]))
@@ -148,8 +153,13 @@ def get_cov(P_file_list,F_file_list,statment_list):
     #    print(i+1, _tuple[i],statment_list[_tuple[i][0]-1])
    
     #line number for statement s, quote of statement s, #failedTests(s), #passedTests(s), totalpassed, S(s)
-    print( '{:<5}{:<5}{:<70}{:<5} {:<5} {:<5} {:<5}'.format("Top","line","statement","#Pass", "#Fail","#T_Pass","susp_val"))
-    for i in range( 10):
+    print( '{:<5}{:<70}{:<5} {:<5} {:<5} {:<6}'.format("line","statement","#Fail", "#Pass","#T_Pass","S(s)"))
+    
+    _len = len(_tuple) 
+    if len(_tuple) > 10:
+        _len=10;
+    
+    for i in range( _len):
         line_number,pred = _tuple[i]
         stateM = statment_list[line_number-1]
         if(len(stateM)>0):
@@ -159,7 +169,7 @@ def get_cov(P_file_list,F_file_list,statment_list):
         new_st = new_st.strip()
         #print('{}'.format(new_st) )
         #print(i+1,',',line_number,',',statment_list[_tuple[i][0]-1], F_hit_list[_tuple[i][0]-1], P_hit_list[_tuple[i][0]-1],len(P_file_list) ,pred)
-        print('{:<5},{:<5},{:<70},{:<5},{:<5},{:<5},{:<5}'.format(i+1,line_number,new_st, F_hit_list[line_number-1], P_hit_list[line_number-1],len(P_file_list),pred) )
+        print('{:<5},{:<70},{:<5},{:<5},{:<5},{:<6}'.format(line_number,new_st, F_hit_list[line_number-1], P_hit_list[line_number-1],len(P_file_list),pred) )
 
 
     return _tuple

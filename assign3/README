@@ -1,0 +1,46 @@
+
+There are fllowing scripts avaliabe: 
+run_test.sh		
+run_py.sh    		
+fl_Op2.py  (>= Python3)
+
+
+Note:	1. tcas_orig.c is the original version of C files.
+	2. tcas.c is the temp file, which will be replaced by tcas_*.c 
+	3. gcov output will be saved in tcas_out/ 
+	4. Uncomment line 68 in run_test.sh to run generate test & fl_Op2 TOGETHER.
+	5. DO NOT delete runtests.sh
+
+######################################################################################
+run_test.sh: generate and copy tests
+
+1.1	To test original version of tcas.c, run:
+	bash run_test.sh orig
+    
+1.2	To test tcas_fl1.c, run:
+	bash run_test.sh fl1
+	
+1.3	To test tcas_fl2.c, run:
+	bash run_test.sh fl2
+	
+1.4.	To test tcas_fl3.c, run:  (only 4 statements will be hit)
+	bash run_test.sh fl3
+	
+#######################################################################################
+
+2.1	To run fl_Op tool, run either:
+	sh run_py.sh
+	
+	or:
+	python3 fl_Op2.py path-to-folder/P   path-to-folder/F
+	
+	
+	
+
+
+	
+
+
+
+
+

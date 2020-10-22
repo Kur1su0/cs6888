@@ -4,7 +4,7 @@
         -:    0:Runs:1
         -:    1:
         -:    2:/* $Log: tcas.c,v $
-        -:    3: * Revision 10/2020 elbaum -- fault version
+        -:    3: * Revision 10/2020 elbaum -- fault version -- _fl3.c
         -:    4: * */
         -:    5:
         -:    6:#include <stdio.h>
@@ -146,8 +146,8 @@
         1:  142:int main(argc, argv)
         -:  143:int argc;
         -:  144:char *argv[];
-        -:  145:{
-        1:  146:    if(argc < 13)
+        -:  145:{//Mutant [change '<13' to '<15']
+        1:  146:    if(argc < 15)
         -:  147:    {
         1:  148:	fprintf(stdout, "Error: Command line arguments");
         1:  149:	exit(1);

@@ -1,4 +1,30 @@
 #!/bin/bash
+which_file=$1
+echo $#
+if [ $# -ne 1 ]
+then 
+	echo "need an argument for C file"
+	exit
+fi
+
+if   [ $which_file == "orig" ]; then 
+	echo "$which_file" 
+	cp tcas_orig.c tcas.c
+elif [ $which_file == "fl1" ]; then
+	echo "$which_file"
+	cp tcas_fl1.c tcas.c 
+elif [ $which_file == "fl2" ]; then 
+	echo "$which_file" 
+	cp tcas_fl2.c tcas.c
+elif [ $which_file == "fl3" ]; then 
+	echo "$which_file" 
+	cp tcas_fl3.c tcas.c
+else 
+	echo "worng arg : ${which_file}" 
+	exit
+fi
+
+
 
 total_line=$(wc -l testcase | awk -F ' ' '{print $1}')
 
@@ -38,6 +64,7 @@ do
 done
 make clean
 
+#Uncomment line below to run generate test & fl_Op2 TOGETHER.
 sh run_py.sh
 
 
