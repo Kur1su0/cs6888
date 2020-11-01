@@ -62,9 +62,10 @@ do
 	rm *.gcda
 
 done
+#commnit line below to stop removing process
 make clean
 
 #Uncomment line below to run generate test & fl_Op2 TOGETHER.
-sh run_py.sh
+#sh run_py.sh
 
 
