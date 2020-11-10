@@ -1,0 +1,617 @@
+[2724048][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724048][environment] No .inferconfig file found
+[2724048][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724048][environment] INFER_ARGS =   command line arguments:   infer-run -- makeActive checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724048][environment] Infer log identifier is 
+Infer version v0.17.0
+[2724048][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[2724048][environment] 
+[2724048][   progress] Capturing in make/cc mode...
+[2724048][environment] Running command make with env:
+[2724048][environment] (Extend((PATH /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/wrappers:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/infer-linux64-v0.17.0/bin:/opt/infer-linux64-v0.17.0/bin)(INFER_OLD_PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/infer-linux64-v0.17.0/bin:/opt/infer-linux64-v0.17.0/bin)))
+[2724048][environment] 
+
+[2724053][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724053][environment] No .inferconfig file found
+[2724053][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724053][environment] INFER_ARGS =   @/tmp/args.tmp.82190c  ++Contents of '/tmp/args.tmp.82190c':
+[2724053][environment]                                         -o tcc.o -c tcc.c
+[2724053][environment]                                         -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724053][environment]                                         -DTCC_TARGET_X86_64 -DONE_SOURCE=0
+[2724053][environment]                                         -Wall -g -O2
+[2724053][environment]                                         -Wdeclaration-after-statement
+[2724053][environment]                                         -fno-strict-aliasing
+[2724053][environment]                                         -Wno-pointer-sign -Wno-sign-compare
+[2724053][environment]                                         -Wno-unused-result -I. -B
+[2724053][environment]                                         /root/git/cs6888/assign1/afl-2.52b -g
+[2724053][environment]                                         -O3 -funroll-loops -D__AFL_COMPILER=1
+[2724053][environment]                                         -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1
+[2724053][environment]                                       
+[2724053][environment] command line arguments:   gcc -o tcc.o -c tcc.c
+[2724053][environment]                           -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724053][environment]                           -DTCC_TARGET_X86_64 -DONE_SOURCE=0 -Wall -g -O2
+[2724053][environment]                           -Wdeclaration-after-statement -fno-strict-aliasing
+[2724053][environment]                           -Wno-pointer-sign -Wno-sign-compare
+[2724053][environment]                           -Wno-unused-result -I. -B
+[2724053][environment]                           /root/git/cs6888/assign1/afl-2.52b -g -O3
+[2724053][environment]                           -funroll-loops -D__AFL_COMPILER=1
+[2724053][environment]                           -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1Active checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724053][      debug] 
+[2724053][      debug] *** Beginning capture of file /root/git/cs6888/assign1/tcc-0.9.27/tcc.c ***
+[2724053][      debug] Clang frontend action is translating and linting
+[2724053][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[2724053][      debug] Elapsed: 1.205s.
+[2724053][      debug] 
+[2724053][environment] Infer log identifier is 
+
+[2724061][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724061][environment] No .inferconfig file found
+[2724061][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724061][environment] INFER_ARGS =   @/tmp/args.tmp.cde64a  ++Contents of '/tmp/args.tmp.cde64a':
+[2724061][environment]                                         -o libtcc.o -c libtcc.c
+[2724061][environment]                                         -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724061][environment]                                         -DTCC_TARGET_X86_64 -DONE_SOURCE=0
+[2724061][environment]                                         -Wall -g -O2
+[2724061][environment]                                         -Wdeclaration-after-statement
+[2724061][environment]                                         -fno-strict-aliasing
+[2724061][environment]                                         -Wno-pointer-sign -Wno-sign-compare
+[2724061][environment]                                         -Wno-unused-result -I. -B
+[2724061][environment]                                         /root/git/cs6888/assign1/afl-2.52b -g
+[2724061][environment]                                         -O3 -funroll-loops -D__AFL_COMPILER=1
+[2724061][environment]                                         -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1
+[2724061][environment]                                       
+[2724061][environment] command line arguments:   gcc -o libtcc.o -c libtcc.c
+[2724061][environment]                           -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724061][environment]                           -DTCC_TARGET_X86_64 -DONE_SOURCE=0 -Wall -g -O2
+[2724061][environment]                           -Wdeclaration-after-statement -fno-strict-aliasing
+[2724061][environment]                           -Wno-pointer-sign -Wno-sign-compare
+[2724061][environment]                           -Wno-unused-result -I. -B
+[2724061][environment]                           /root/git/cs6888/assign1/afl-2.52b -g -O3
+[2724061][environment]                           -funroll-loops -D__AFL_COMPILER=1
+[2724061][environment]                           -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1Active checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724061][      debug] 
+[2724061][      debug] *** Beginning capture of file /root/git/cs6888/assign1/tcc-0.9.27/libtcc.c ***
+[2724061][      debug] Clang frontend action is translating and linting
+[2724061][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[2724061][      debug] Elapsed: 384ms.
+[2724061][      debug] 
+[2724061][environment] Infer log identifier is 
+
+[2724069][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724069][environment] No .inferconfig file found
+[2724069][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724069][environment] INFER_ARGS =   @/tmp/args.tmp.a37dc5  ++Contents of '/tmp/args.tmp.a37dc5':
+[2724069][environment]                                         -o tccpp.o -c tccpp.c
+[2724069][environment]                                         -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724069][environment]                                         -DTCC_TARGET_X86_64 -DONE_SOURCE=0
+[2724069][environment]                                         -Wall -g -O2
+[2724069][environment]                                         -Wdeclaration-after-statement
+[2724069][environment]                                         -fno-strict-aliasing
+[2724069][environment]                                         -Wno-pointer-sign -Wno-sign-compare
+[2724069][environment]                                         -Wno-unused-result -I. -B
+[2724069][environment]                                         /root/git/cs6888/assign1/afl-2.52b -g
+[2724069][environment]                                         -O3 -funroll-loops -D__AFL_COMPILER=1
+[2724069][environment]                                         -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1
+[2724069][environment]                                       
+[2724069][environment] command line arguments:   gcc -o tccpp.o -c tccpp.c
+[2724069][environment]                           -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724069][environment]                           -DTCC_TARGET_X86_64 -DONE_SOURCE=0 -Wall -g -O2
+[2724069][environment]                           -Wdeclaration-after-statement -fno-strict-aliasing
+[2724069][environment]                           -Wno-pointer-sign -Wno-sign-compare
+[2724069][environment]                           -Wno-unused-result -I. -B
+[2724069][environment]                           /root/git/cs6888/assign1/afl-2.52b -g -O3
+[2724069][environment]                           -funroll-loops -D__AFL_COMPILER=1
+[2724069][environment]                           -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1Active checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724069][      debug] 
+[2724069][      debug] *** Beginning capture of file /root/git/cs6888/assign1/tcc-0.9.27/tccpp.c ***
+[2724069][      debug] Clang frontend action is translating and linting
+[2724069][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[2724069][      debug] Elapsed: 504ms.
+[2724069][      debug] 
+[2724069][environment] Infer log identifier is 
+
+[2724077][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724077][environment] No .inferconfig file found
+[2724077][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724077][environment] INFER_ARGS =   @/tmp/args.tmp.104db3  ++Contents of '/tmp/args.tmp.104db3':
+[2724077][environment]                                         -o tccgen.o -c tccgen.c
+[2724077][environment]                                         -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724077][environment]                                         -DTCC_TARGET_X86_64 -DONE_SOURCE=0
+[2724077][environment]                                         -Wall -g -O2
+[2724077][environment]                                         -Wdeclaration-after-statement
+[2724077][environment]                                         -fno-strict-aliasing
+[2724077][environment]                                         -Wno-pointer-sign -Wno-sign-compare
+[2724077][environment]                                         -Wno-unused-result -I. -B
+[2724077][environment]                                         /root/git/cs6888/assign1/afl-2.52b -g
+[2724077][environment]                                         -O3 -funroll-loops -D__AFL_COMPILER=1
+[2724077][environment]                                         -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1
+[2724077][environment]                                       
+[2724077][environment] command line arguments:   gcc -o tccgen.o -c tccgen.c
+[2724077][environment]                           -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724077][environment]                           -DTCC_TARGET_X86_64 -DONE_SOURCE=0 -Wall -g -O2
+[2724077][environment]                           -Wdeclaration-after-statement -fno-strict-aliasing
+[2724077][environment]                           -Wno-pointer-sign -Wno-sign-compare
+[2724077][environment]                           -Wno-unused-result -I. -B
+[2724077][environment]                           /root/git/cs6888/assign1/afl-2.52b -g -O3
+[2724077][environment]                           -funroll-loops -D__AFL_COMPILER=1
+[2724077][environment]                           -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1Active checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724077][      debug] 
+[2724077][      debug] *** Beginning capture of file /root/git/cs6888/assign1/tcc-0.9.27/tccgen.c ***
+[2724077][      debug] Clang frontend action is translating and linting
+[2724077][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[2724077][      debug] Elapsed: 610ms.
+[2724077][      debug] 
+[2724077][environment] Infer log identifier is 
+
+[2724085][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724085][environment] No .inferconfig file found
+[2724085][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724085][environment] INFER_ARGS =   @/tmp/args.tmp.21b074  ++Contents of '/tmp/args.tmp.21b074':
+[2724085][environment]                                         -o tccelf.o -c tccelf.c
+[2724085][environment]                                         -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724085][environment]                                         -DTCC_TARGET_X86_64 -DONE_SOURCE=0
+[2724085][environment]                                         -Wall -g -O2
+[2724085][environment]                                         -Wdeclaration-after-statement
+[2724085][environment]                                         -fno-strict-aliasing
+[2724085][environment]                                         -Wno-pointer-sign -Wno-sign-compare
+[2724085][environment]                                         -Wno-unused-result -I. -B
+[2724085][environment]                                         /root/git/cs6888/assign1/afl-2.52b -g
+[2724085][environment]                                         -O3 -funroll-loops -D__AFL_COMPILER=1
+[2724085][environment]                                         -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1
+[2724085][environment]                                       
+[2724085][environment] command line arguments:   gcc -o tccelf.o -c tccelf.c
+[2724085][environment]                           -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724085][environment]                           -DTCC_TARGET_X86_64 -DONE_SOURCE=0 -Wall -g -O2
+[2724085][environment]                           -Wdeclaration-after-statement -fno-strict-aliasing
+[2724085][environment]                           -Wno-pointer-sign -Wno-sign-compare
+[2724085][environment]                           -Wno-unused-result -I. -B
+[2724085][environment]                           /root/git/cs6888/assign1/afl-2.52b -g -O3
+[2724085][environment]                           -funroll-loops -D__AFL_COMPILER=1
+[2724085][environment]                           -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1Active checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724085][      debug] 
+[2724085][      debug] *** Beginning capture of file /root/git/cs6888/assign1/tcc-0.9.27/tccelf.c ***
+[2724085][      debug] Clang frontend action is translating and linting
+[2724085][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[2724085][      debug] Elapsed: 347ms.
+[2724085][      debug] 
+[2724085][environment] Infer log identifier is 
+
+[2724093][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724093][environment] No .inferconfig file found
+[2724093][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724093][environment] INFER_ARGS =   @/tmp/args.tmp.486da5  ++Contents of '/tmp/args.tmp.486da5':
+[2724093][environment]                                         -o tccasm.o -c tccasm.c
+[2724093][environment]                                         -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724093][environment]                                         -DTCC_TARGET_X86_64 -DONE_SOURCE=0
+[2724093][environment]                                         -Wall -g -O2
+[2724093][environment]                                         -Wdeclaration-after-statement
+[2724093][environment]                                         -fno-strict-aliasing
+[2724093][environment]                                         -Wno-pointer-sign -Wno-sign-compare
+[2724093][environment]                                         -Wno-unused-result -I. -B
+[2724093][environment]                                         /root/git/cs6888/assign1/afl-2.52b -g
+[2724093][environment]                                         -O3 -funroll-loops -D__AFL_COMPILER=1
+[2724093][environment]                                         -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1
+[2724093][environment]                                       
+[2724093][environment] command line arguments:   gcc -o tccasm.o -c tccasm.c
+[2724093][environment]                           -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724093][environment]                           -DTCC_TARGET_X86_64 -DONE_SOURCE=0 -Wall -g -O2
+[2724093][environment]                           -Wdeclaration-after-statement -fno-strict-aliasing
+[2724093][environment]                           -Wno-pointer-sign -Wno-sign-compare
+[2724093][environment]                           -Wno-unused-result -I. -B
+[2724093][environment]                           /root/git/cs6888/assign1/afl-2.52b -g -O3
+[2724093][environment]                           -funroll-loops -D__AFL_COMPILER=1
+[2724093][environment]                           -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1Active checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724093][      debug] 
+[2724093][      debug] *** Beginning capture of file /root/git/cs6888/assign1/tcc-0.9.27/tccasm.c ***
+[2724093][      debug] Clang frontend action is translating and linting
+[2724093][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[2724093][      debug] Elapsed: 195ms.
+[2724093][      debug] 
+[2724093][environment] Infer log identifier is 
+
+[2724101][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724101][environment] No .inferconfig file found
+[2724101][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724101][environment] INFER_ARGS =   @/tmp/args.tmp.ad401a  ++Contents of '/tmp/args.tmp.ad401a':
+[2724101][environment]                                         -o tccrun.o -c tccrun.c
+[2724101][environment]                                         -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724101][environment]                                         -DTCC_TARGET_X86_64 -DONE_SOURCE=0
+[2724101][environment]                                         -Wall -g -O2
+[2724101][environment]                                         -Wdeclaration-after-statement
+[2724101][environment]                                         -fno-strict-aliasing
+[2724101][environment]                                         -Wno-pointer-sign -Wno-sign-compare
+[2724101][environment]                                         -Wno-unused-result -I. -B
+[2724101][environment]                                         /root/git/cs6888/assign1/afl-2.52b -g
+[2724101][environment]                                         -O3 -funroll-loops -D__AFL_COMPILER=1
+[2724101][environment]                                         -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1
+[2724101][environment]                                       
+[2724101][environment] command line arguments:   gcc -o tccrun.o -c tccrun.c
+[2724101][environment]                           -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724101][environment]                           -DTCC_TARGET_X86_64 -DONE_SOURCE=0 -Wall -g -O2
+[2724101][environment]                           -Wdeclaration-after-statement -fno-strict-aliasing
+[2724101][environment]                           -Wno-pointer-sign -Wno-sign-compare
+[2724101][environment]                           -Wno-unused-result -I. -B
+[2724101][environment]                           /root/git/cs6888/assign1/afl-2.52b -g -O3
+[2724101][environment]                           -funroll-loops -D__AFL_COMPILER=1
+[2724101][environment]                           -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1Active checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724101][      debug] 
+[2724101][      debug] *** Beginning capture of file /root/git/cs6888/assign1/tcc-0.9.27/tccrun.c ***
+[2724101][      debug] Clang frontend action is translating and linting
+[2724101][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[2724101][      debug] tccrun.c:286:5-51: ERROR translating statement 'DeclStmt'
+[2724101][      debug] Aborting translation of method 'set_pages_executable' in file 'tccrun.c'
+[2724101][      debug] Unimplemented feature:
+[2724101][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":14221,"parent_pointer":1,"source_range":({"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":5},{"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":50})},{"name":"__clear_cache","qual_name":["__clear_cache"]},{"type_ptr":14222},{"parameters":[<"ParmVarDecl":({"pointer":14223,"source_range":({"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":24},{"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":30})},{"name":"beginning","qual_name":["beginning"]},{"type_ptr":1093},{"parm_index_in_function":0})>,<"ParmVarDecl":({"pointer":14224,"source_range":({"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":41},{"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":47})},{"name":"end","qual_name":["end"]},{"type_ptr":1093},{"parm_index_in_function":1})>]})>
+[2724101][      debug] tccrun.c:286:5-51: ERROR translating statement 'DeclStmt'
+[2724101][      debug] Aborting translation of method 'set_pages_executable' in file 'tccrun.c'
+[2724101][      debug] Unimplemented feature:
+[2724101][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":14221,"parent_pointer":1,"source_range":({"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":5},{"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":50})},{"name":"__clear_cache","qual_name":["__clear_cache"]},{"type_ptr":14222},{"parameters":[<"ParmVarDecl":({"pointer":14223,"source_range":({"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":24},{"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":30})},{"name":"beginning","qual_name":["beginning"]},{"type_ptr":1093},{"parm_index_in_function":0})>,<"ParmVarDecl":({"pointer":14224,"source_range":({"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":41},{"file":"/root/git/cs6888/assign1/tcc-0.9.27/tccrun.c","line":286,"column":47})},{"name":"end","qual_name":["end"]},{"type_ptr":1093},{"parm_index_in_function":1})>]})>
+[2724101][      debug] Elapsed: 228ms.
+[2724101][      debug] 
+[2724101][environment] Infer log identifier is 
+
+[2724109][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724109][environment] No .inferconfig file found
+[2724109][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724109][environment] INFER_ARGS =   @/tmp/args.tmp.199905  ++Contents of '/tmp/args.tmp.199905':
+[2724109][environment]                                         -o x86_64-gen.o -c x86_64-gen.c
+[2724109][environment]                                         -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724109][environment]                                         -DTCC_TARGET_X86_64 -DONE_SOURCE=0
+[2724109][environment]                                         -Wall -g -O2
+[2724109][environment]                                         -Wdeclaration-after-statement
+[2724109][environment]                                         -fno-strict-aliasing
+[2724109][environment]                                         -Wno-pointer-sign -Wno-sign-compare
+[2724109][environment]                                         -Wno-unused-result -I. -B
+[2724109][environment]                                         /root/git/cs6888/assign1/afl-2.52b -g
+[2724109][environment]                                         -O3 -funroll-loops -D__AFL_COMPILER=1
+[2724109][environment]                                         -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1
+[2724109][environment]                                       
+[2724109][environment] command line arguments:   gcc -o x86_64-gen.o -c x86_64-gen.c
+[2724109][environment]                           -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724109][environment]                           -DTCC_TARGET_X86_64 -DONE_SOURCE=0 -Wall -g -O2
+[2724109][environment]                           -Wdeclaration-after-statement -fno-strict-aliasing
+[2724109][environment]                           -Wno-pointer-sign -Wno-sign-compare
+[2724109][environment]                           -Wno-unused-result -I. -B
+[2724109][environment]                           /root/git/cs6888/assign1/afl-2.52b -g -O3
+[2724109][environment]                           -funroll-loops -D__AFL_COMPILER=1
+[2724109][environment]                           -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1Active checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724109][      debug] 
+[2724109][      debug] *** Beginning capture of file /root/git/cs6888/assign1/tcc-0.9.27/x86_64-gen.c ***
+[2724109][      debug] Clang frontend action is translating and linting
+[2724109][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[2724109][      debug] x86_64-gen.c:1198:5-1200:6: ERROR translating statement 'DeclStmt'
+[2724109][      debug] Aborting translation of method 'classify_x86_64_va_arg' in file 'x86_64-gen.c'
+[2724109][      debug] Unimplemented feature:
+[2724109][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":16251,"source_range":({"file":"/root/git/cs6888/assign1/tcc-0.9.27/x86_64-gen.c","line":1198,"column":5},{"file":"/root/git/cs6888/assign1/tcc-0.9.27/x86_64-gen.c","line":1200,"column":5})},{"name":"__va_arg_type","qual_name":["__va_arg_type","classify_x86_64_va_arg"]},16252,[<"EnumConstantDecl":({"pointer":16253,"source_range":({"file":"/root/git/cs6888/assign1/tcc-0.9.27/x86_64-gen.c","line":1199,"column":9},{"file":"/root/git/cs6888/assign1/tcc-0.9.27/x86_64-gen.c","line":1199,"column":9}),"is_this_declaration_referenced":true},{"name":"__va_gen_reg","qual_name":["__va_gen_reg","__va_arg_type","classify_x86_64_va_arg"]},{"type_ptr":15},{})>,<"EnumConstantDecl":({"pointer":16254,"source_range":({"file":"/root/git/cs6888/assign1/tcc-0.9.27/x86_64-gen.c","line":1199,"column":23},{"file":"/root/git/cs6888/assign1/tcc-0.9.27/x86_64-gen.c","line":1199,"column":23}),"is_this_declaration_referenced":true},{"name":"__va_float_reg","qual_name":["__va_float_reg","__va_arg_type","classify_x86_64_va_arg"]},{"type_ptr":15},{})>,<"EnumConstantDecl":({"pointer":16255,"source_range":({"file":"/root/git/cs6888/assign1/tcc-0.9.27/x86_64-gen.c","line":1199,"column":39},{"file":"/root/git/cs6888/assign1/tcc-0.9.27/x86_64-gen.c","line":1199,"column":39}),"is_this_declaration_referenced":true},{"name":"__va_stack","qual_name":["__va_stack","__va_arg_type","classify_x86_64_va_arg"]},{"type_ptr":15},{})>],{},<"TTK_Enum">,{})>
+[2724109][      debug] Elapsed: 283ms.
+[2724109][      debug] 
+[2724109][environment] Infer log identifier is 
+
+[2724117][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724117][environment] No .inferconfig file found
+[2724117][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724117][environment] INFER_ARGS =   @/tmp/args.tmp.e04a6d  ++Contents of '/tmp/args.tmp.e04a6d':
+[2724117][environment]                                         -o x86_64-link.o -c x86_64-link.c
+[2724117][environment]                                         -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724117][environment]                                         -DTCC_TARGET_X86_64 -DONE_SOURCE=0
+[2724117][environment]                                         -Wall -g -O2
+[2724117][environment]                                         -Wdeclaration-after-statement
+[2724117][environment]                                         -fno-strict-aliasing
+[2724117][environment]                                         -Wno-pointer-sign -Wno-sign-compare
+[2724117][environment]                                         -Wno-unused-result -I. -B
+[2724117][environment]                                         /root/git/cs6888/assign1/afl-2.52b -g
+[2724117][environment]                                         -O3 -funroll-loops -D__AFL_COMPILER=1
+[2724117][environment]                                         -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1
+[2724117][environment]                                       
+[2724117][environment] command line arguments:   gcc -o x86_64-link.o -c x86_64-link.c
+[2724117][environment]                           -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724117][environment]                           -DTCC_TARGET_X86_64 -DONE_SOURCE=0 -Wall -g -O2
+[2724117][environment]                           -Wdeclaration-after-statement -fno-strict-aliasing
+[2724117][environment]                           -Wno-pointer-sign -Wno-sign-compare
+[2724117][environment]                           -Wno-unused-result -I. -B
+[2724117][environment]                           /root/git/cs6888/assign1/afl-2.52b -g -O3
+[2724117][environment]                           -funroll-loops -D__AFL_COMPILER=1
+[2724117][environment]                           -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1Active checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724117][      debug] 
+[2724117][      debug] *** Beginning capture of file /root/git/cs6888/assign1/tcc-0.9.27/x86_64-link.c ***
+[2724117][      debug] Clang frontend action is translating and linting
+[2724117][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[2724117][      debug] Elapsed: 132ms.
+[2724117][      debug] 
+[2724117][environment] Infer log identifier is 
+
+[2724125][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724125][environment] No .inferconfig file found
+[2724125][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724125][environment] INFER_ARGS =   @/tmp/args.tmp.9447bf  ++Contents of '/tmp/args.tmp.9447bf':
+[2724125][environment]                                         -o i386-asm.o -c i386-asm.c
+[2724125][environment]                                         -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724125][environment]                                         -DTCC_TARGET_X86_64 -DONE_SOURCE=0
+[2724125][environment]                                         -Wall -g -O2
+[2724125][environment]                                         -Wdeclaration-after-statement
+[2724125][environment]                                         -fno-strict-aliasing
+[2724125][environment]                                         -Wno-pointer-sign -Wno-sign-compare
+[2724125][environment]                                         -Wno-unused-result -I. -B
+[2724125][environment]                                         /root/git/cs6888/assign1/afl-2.52b -g
+[2724125][environment]                                         -O3 -funroll-loops -D__AFL_COMPILER=1
+[2724125][environment]                                         -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1
+[2724125][environment]                                       
+[2724125][environment] command line arguments:   gcc -o i386-asm.o -c i386-asm.c
+[2724125][environment]                           -DCONFIG_TRIPLET="x86_64-linux-gnu"
+[2724125][environment]                           -DTCC_TARGET_X86_64 -DONE_SOURCE=0 -Wall -g -O2
+[2724125][environment]                           -Wdeclaration-after-statement -fno-strict-aliasing
+[2724125][environment]                           -Wno-pointer-sign -Wno-sign-compare
+[2724125][environment]                           -Wno-unused-result -I. -B
+[2724125][environment]                           /root/git/cs6888/assign1/afl-2.52b -g -O3
+[2724125][environment]                           -funroll-loops -D__AFL_COMPILER=1
+[2724125][environment]                           -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1Active checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724125][      debug] 
+[2724125][      debug] *** Beginning capture of file /root/git/cs6888/assign1/tcc-0.9.27/i386-asm.c ***
+[2724125][      debug] Clang frontend action is translating and linting
+[2724125][      debug] Loading the following linters files: /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[2724125][      debug] Elapsed: 443ms.
+[2724125][      debug] 
+[2724125][environment] Infer log identifier is 
+
+[2724133][environment] CWD = /root/git/cs6888/assign1/tcc-0.9.27
+[2724133][environment] No .inferconfig file found
+[2724133][environment] Project root = /root/git/cs6888/assign1/tcc-0.9.27
+[2724133][environment] INFER_ARGS =   @/tmp/args.tmp.7b5dc6  ++Contents of '/tmp/args.tmp.7b5dc6':
+[2724133][environment]                                         -o tcc tcc.o libtcc.a -lm -ldl -B
+[2724133][environment]                                         /root/git/cs6888/assign1/afl-2.52b -g
+[2724133][environment]                                         -O3 -funroll-loops -D__AFL_COMPILER=1
+[2724133][environment]                                         -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1
+[2724133][environment]                                       
+[2724133][environment] command line arguments:   gcc -o tcc tcc.o libtcc.a -lm -ldl -B
+[2724133][environment]                           /root/git/cs6888/assign1/afl-2.52b -g -O3
+[2724133][environment]                           -funroll-loops -D__AFL_COMPILER=1
+[2724133][environment]                           -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=1Active checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724133][environment] Infer log identifier is 
+[2724048][   progress] Found 10 source files to analyze in /root/git/cs6888/assign1/tcc-0.9.27/infer-out
+[2724048][environment] Parallel jobs: 12
+[2724155][   progress] tccpp.c starting
+[2724147][   progress] libtcc.c starting
+[2724149][   progress] tccrun.c starting
+[2724156][   progress] tcc.c starting
+[2724150][   progress] i386-asm.c starting
+[2724152][   progress] tccelf.c starting
+[2724153][   progress] tccgen.c starting
+[2724151][   progress] tccasm.c starting
+[2724154][   progress] x86_64-link.c starting
+[2724148][   progress] x86_64-gen.c starting
+[2724154][   progress] x86_64-link.c DONE
+[2724148][   progress] x86_64-gen.c DONE
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724151][   progress] tccasm.c DONE
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][      debug] 
+[2724153][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct TinyAlloc
+[2724153][   progress] tccgen.c DONE
+[2724155][   progress] tccpp.c DONE
+[2724147][   progress] libtcc.c DONE
+[2724149][   progress] tccrun.c DONE
+[2724150][   progress] i386-asm.c DONE
+[2724152][   progress] tccelf.c DONE
+[2724156][   progress] tcc.c DONE
+[2724048][   progress] 
+[2724048][   progress] Analysis finished in 1min10ss
+[2724048][      debug] collected stats:
+[2724048][      debug] Backend stats:
+[2724048][      debug]   summary_file_try_load= 7982
+[2724048][      debug]   summary_read_from_disk= 1784
+[2724048][      debug]   summary_cache_hits= 117717 (96%)
+[2724048][      debug]   summary_cache_misses= 4781
+[2724048][      debug]   summary_has_model_queries= 0
+[2724048][      debug]   ondemand_procs_analyzed= 1089
+[2724048][      debug]   ondemand_local_cache_hits= 61316 (95%)
+[2724048][      debug]   ondemand_local_cache_misses= 2946
+[2724048][      debug]   
+[2724048][      debug] 

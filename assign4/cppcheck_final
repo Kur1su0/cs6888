@@ -1,0 +1,24 @@
+arm-gen.c	278	 error	 Signed integer overflow for expression '0xff<<(32-i)'. [integerOverflow]
+c67-gen.c	1602	 error	 Array 'ParamLocOnStack[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+c67-gen.c	1593	 note	 After for loop, t has value 10
+c67-gen.c	1602	 note	 Array index out of bounds
+c67-gen.c	1773	 error	 Array 'ParamLocOnStack[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+c67-gen.c	1765	 note	 After for loop, t has value 10
+c67-gen.c	1773	 note	 Array index out of bounds
+i386-asm.h	101	 error	 Syntax Error
+x86_64-gen.c	336	 warning	 Possible null pointer dereference
+x86_64-gen.c	1431	 note	 Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+x86_64-gen.c	336	 note	 Null pointer dereference
+x86_64-gen.c	270	 warning	 Possible null pointer dereference
+x86_64-gen.c	977	 note	 Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+x86_64-gen.c	338	 note	 Calling function 'gen_modrm_impl', 3rd argument 'sym' value is 0
+x86_64-gen.c	298	 note	 Calling function 'gen_gotpcrel', 2nd argument 'sym' value is 0
+x86_64-gen.c	270	 note	 Null pointer dereference
+x86_64-gen.c	336	 warning	 Possible null pointer dereference
+x86_64-gen.c	977	 note	 Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+x86_64-gen.c	336	 note	 Null pointer dereference
+x86_64-gen.c	270	 error	 Null pointer dereference
+x86_64-gen.c	1496	 note	 Calling function 'gen_modrm', 3rd argument 'NULL' value is 0
+x86_64-gen.c	328	 note	 Calling function gen_modrm_impl, 3rd argument is null
+x86_64-gen.c	298	 note	 Calling function gen_gotpcrel, 2nd argument is null
+x86_64-gen.c	270	 note	 Dereferencing argument sym that is null

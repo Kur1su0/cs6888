@@ -1,0 +1,51 @@
+[2724732][environment] CWD = /root/git/cs6888/assign4/infer-out
+[2724732][environment] No .inferconfig file found
+[2724732][environment] Project root = /root/git/cs6888/assign4/infer-out
+[2724732][environment] INFER_ARGS =   command line arguments:   infer-reportActive checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724732][environment] Infer log identifier is 
+
+[2724737][      phase] ============================================================
+[2724737][      phase] = New infer execution begins
+[2724737][      phase] ============================================================
+[2724737][environment] CWD = /root/git/cs6888/assign4/infer-out
+[2724737][environment] No .inferconfig file found
+[2724737][environment] Project root = /root/git/cs6888/assign4/infer-out
+[2724737][environment] INFER_ARGS =   @/tmp/args.tmp.a3921a  ++Contents of '/tmp/args.tmp.a3921a':
+[2724737][environment]                                         bugs.txt
+[2724737][environment]                                       
+[2724737][environment] command line arguments:   infer-report bugs.txtActive checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724737][   user err] Load Error: file bugs.txt: arguments must be .specs files
+[2724737][   user err] 
+
+[2724748][      phase] ============================================================
+[2724748][      phase] = New infer execution begins
+[2724748][      phase] ============================================================
+[2724748][environment] CWD = /root/git/cs6888/assign4/infer-out
+[2724748][environment] No .inferconfig file found
+[2724748][environment] Project root = /root/git/cs6888/assign4/infer-out
+[2724748][environment] INFER_ARGS =   command line arguments:   infer-exploreActive checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[2724748][ extern err] ** Error running the reporting script:
+[2724748][ extern err] **   /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/python/inferTraceBugs -o /root/git/cs6888/assign4/infer-out/infer-out
+[2724748][ extern err] ** See error above
+[2724748][environment] Infer log identifier is 
+
+[6685][      phase] ============================================================
+[6685][      phase] = New infer execution begins
+[6685][      phase] ============================================================
+[6685][environment] CWD = /root/git/cs6888/assign4/infer-out
+[6685][environment] No .inferconfig file found
+[6685][environment] Project root = /root/git/cs6888/assign4/infer-out
+[6685][environment] INFER_ARGS =   command line arguments:   infer-reportActive checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[6685][environment] Infer log identifier is 
+
+[6688][      phase] ============================================================
+[6688][      phase] = New infer execution begins
+[6688][      phase] ============================================================
+[6688][environment] CWD = /root/git/cs6888/assign4/infer-out
+[6688][environment] No .inferconfig file found
+[6688][environment] Project root = /root/git/cs6888/assign4/infer-out
+[6688][environment] INFER_ARGS =   command line arguments:   infer-exploreActive checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[6688][ extern err] ** Error running the reporting script:
+[6688][ extern err] **   /opt/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/python/inferTraceBugs -o /root/git/cs6888/assign4/infer-out/infer-out
+[6688][ extern err] ** See error above
+[6688][environment] Infer log identifier is 

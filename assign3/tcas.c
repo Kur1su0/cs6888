@@ -1,6 +1,6 @@
 
 /* $Log: tcas.c,v $
- * Revision 10/2020 elbaum -- fault version -- tcas_orig.c
+ * Revision 10/2020 elbaum -- fault version -- _fl3.c
  * */
 
 #include <stdio.h>
@@ -142,8 +142,8 @@ int alt_sep_test()
 int main(argc, argv)
 int argc;
 char *argv[];
-{
-    if(argc < 13)
+{//Mutant [change '<13' to '<15']
+    if(argc < 15)
     {
 	fprintf(stdout, "Error: Command line arguments");
 	exit(1);

@@ -66,6 +66,6 @@ done
 make clean
 
 #Uncomment line below to run generate test & fl_Op2 TOGETHER.
-#sh run_py.sh
+sh run_py.sh
 
 

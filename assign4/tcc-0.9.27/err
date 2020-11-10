@@ -1,0 +1,74 @@
+arm-gen.c:278:24: error: Signed integer overflow for expression '0xff<<(32-i)'. [integerOverflow]
+      m=(0xff>>i)|(0xff<<(32-i));
+                       ^
+c67-gen.c:1602:26: error: Array 'ParamLocOnStack[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+     fc = ParamLocOnStack[t] - 8;
+                         ^
+c67-gen.c:1593:6: note: After for loop, t has value 10
+     for (t = 0; t < NoCallArgsPassedOnStack; t++) {
+     ^
+c67-gen.c:1602:26: note: Array index out of bounds
+     fc = ParamLocOnStack[t] - 8;
+                         ^
+c67-gen.c:1773:23: error: Array 'ParamLocOnStack[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+  fc = ParamLocOnStack[t] - 8;
+                      ^
+c67-gen.c:1765:3: note: After for loop, t has value 10
+  for (t = 0; t < NoCallArgsPassedOnStack; t++) {
+  ^
+c67-gen.c:1773:23: note: Array index out of bounds
+  fc = ParamLocOnStack[t] - 8;
+                      ^
+i386-asm.h:101:1: error: Syntax Error: AST broken, ternary operator lacks ':'. [internalAstError]
+ALT(DEF_ASM_OP2(movb, 0xa2, 0, OPC_BWLX, OPT_EAX, OPT_ADDR))
+^
+x86_64-gen.c:336:39: warning: Possible null pointer dereference: sym [nullPointer]
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+x86_64-gen.c:1431:46: note: Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+    gen_modrm64(0x89, arg_regs[i], VT_LOCAL, NULL, loc);
+                                             ^
+x86_64-gen.c:336:39: note: Null pointer dereference
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+x86_64-gen.c:270:21: warning: Possible null pointer dereference: sym [nullPointer]
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+x86_64-gen.c:977:64: note: Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+        gen_modrm64(0x89, arg_regs[reg_param_index], VT_LOCAL, NULL, addr);
+                                                               ^
+x86_64-gen.c:338:31: note: Calling function 'gen_modrm_impl', 3rd argument 'sym' value is 0
+    gen_modrm_impl(op_reg, r, sym, c, is_got);
+                              ^
+x86_64-gen.c:298:19: note: Calling function 'gen_gotpcrel', 2nd argument 'sym' value is 0
+  gen_gotpcrel(r, sym, c);
+                  ^
+x86_64-gen.c:270:21: note: Null pointer dereference
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+x86_64-gen.c:336:39: warning: Possible null pointer dereference: sym [nullPointer]
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+x86_64-gen.c:977:64: note: Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+        gen_modrm64(0x89, arg_regs[reg_param_index], VT_LOCAL, NULL, addr);
+                                                               ^
+x86_64-gen.c:336:39: note: Null pointer dereference
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+x86_64-gen.c:270:21: error: Null pointer dereference: sym [ctunullpointer]
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+x86_64-gen.c:1496:30: note: Calling function 'gen_modrm', 3rd argument 'NULL' value is 0
+
+                             ^
+x86_64-gen.c:328:19: note: Calling function gen_modrm_impl, 3rd argument is null
+    gen_modrm_impl(op_reg, r, sym, c, 0);
+                  ^
+x86_64-gen.c:298:3: note: Calling function gen_gotpcrel, 2nd argument is null
+  gen_gotpcrel(r, sym, c);
+  ^
+x86_64-gen.c:270:21: note: Dereferencing argument sym that is null
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+nofile:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information. [toomanyconfigs]
+

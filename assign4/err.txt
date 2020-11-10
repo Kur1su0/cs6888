@@ -1,0 +1,200 @@
+arm-gen.c:278:24: error: Signed integer overflow for expression '0xff<<(32-i)'. [integerOverflow]
+      m=(0xff>>i)|(0xff<<(32-i));
+                       ^
+c67-gen.c:1602:26: error: Array 'ParamLocOnStack[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+     fc = ParamLocOnStack[t] - 8;
+                         ^
+c67-gen.c:1593:6: note: After for loop, t has value 10
+     for (t = 0; t < NoCallArgsPassedOnStack; t++) {
+     ^
+c67-gen.c:1602:26: note: Array index out of bounds
+     fc = ParamLocOnStack[t] - 8;
+                         ^
+c67-gen.c:1773:23: error: Array 'ParamLocOnStack[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+  fc = ParamLocOnStack[t] - 8;
+                      ^
+c67-gen.c:1765:3: note: After for loop, t has value 10
+  for (t = 0; t < NoCallArgsPassedOnStack; t++) {
+  ^
+c67-gen.c:1773:23: note: Array index out of bounds
+  fc = ParamLocOnStack[t] - 8;
+                      ^
+i386-asm.h:101:1: error: Syntax Error: AST broken, ternary operator lacks ':'. [internalAstError]
+ALT(DEF_ASM_OP2(movb, 0xa2, 0, OPC_BWLX, OPT_EAX, OPT_ADDR))
+^
+lib/bcheck.c:473:43: error: The address of local variable '__bounds_start' is accessed at non-zero index. [objectIndex]
+        __bound_new_region((void *)p[0], p[1]);
+                                          ^
+lib/bcheck.c:471:19: note: Address of variable taken here.
+    p = (size_t *)&__bounds_start;
+                  ^
+lib/bcheck.c:473:43: note: The address of local variable '__bounds_start' is accessed at non-zero index.
+        __bound_new_region((void *)p[0], p[1]);
+                                          ^
+lib/bcheck.c:168:6: error: Null pointer dereference: (void**)0 [nullPointer]
+    *(void **)0 = 0; /* force a runtime error */
+     ^
+tests/boundtest.c:27:19: error: Array 'tab[100]' accessed at index 100, which is out of bounds. [arrayIndexOutOfBounds]
+        sum += tab[i];
+                  ^
+tests/boundtest.c:75:20: error: Array 'tab4[20]' accessed at index 20, which is out of bounds. [arrayIndexOutOfBounds]
+        sum += tab4[i];
+                   ^
+tests/boundtest.c:133:19: error: Array 'tab[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+        sum += tab[i];
+                  ^
+tests/boundtest.c:155:12: error: Buffer is accessed out of bounds: tab [bufferAccessOutOfBounds]
+    memset(tab, 0, 11);
+           ^
+tests/boundtest.c:165:5: error: Memory pointed to by 'ptr' is freed twice. [doubleFree]
+    free(ptr);
+    ^
+tests/boundtest.c:164:5: note: Memory pointed to by 'ptr' is freed twice.
+    free(ptr);
+    ^
+tests/boundtest.c:165:5: note: Memory pointed to by 'ptr' is freed twice.
+    free(ptr);
+    ^
+tests/boundtest.c:57:16: error: Memory is allocated but not initialized: tab4 [uninitdata]
+        sum += tab4[i];
+               ^
+tests/boundtest.c:75:16: error: Memory is allocated but not initialized: tab4 [uninitdata]
+        sum += tab4[i];
+               ^
+tests/boundtest.c:121:16: error: Uninitialized variable: tab [uninitvar]
+        sum += tab[i];
+               ^
+tests/boundtest.c:133:16: error: Uninitialized variable: tab [uninitvar]
+        sum += tab[i];
+               ^
+tests/boundtest.c:145:17: error: Uninitialized variable: tab1 [uninitvar]
+    memcpy(tab, tab1, 10);
+                ^
+tests/pp/02.c:8:0: error: failed to expand 'm', Wrong number of parameters for macro 'f'. [preprocessorErrorDirective]
+#define m(a) a(w)
+^
+tests/pp/03.c:15:1: error: syntax error [syntaxError]
+xglue(HIGH, LOW)
+^
+tests/pp/04.c:4:1: error: syntax error [syntaxError]
+D(foo)
+^
+tests/pp/08.c:4:1: error: syntax error [syntaxError]
+foo(hej.s_pos)
+^
+tests/pp/10.c:9:1: error: Unmatched ')'. Configuration: ''. [syntaxError]
+h(x))))
+^
+tests/pp/11.c:31:1: error: syntax error [syntaxError]
+Y(X X() ())
+^
+tests/pp/14.c:5:1: error: syntax error: keyword 'return' is not allowed in global scope [syntaxError]
+return X(X(1));
+^
+tests/pp/15.c:6:1: error: syntax error: keyword 'return' is not allowed in global scope [syntaxError]
+return (n(long)n(double))d;
+^
+tests/pp/17.c:14:1: error: There is an unknown macro here somewhere. Configuration is required. If X180 is a macro then please configure it. [unknownMacro]
+X180 return X(X(1));
+^
+tests/pp/pp-counter.c:19:4: error: syntax error [syntaxError]
+X7 f(__COUNTER__)
+   ^
+tcctest.c:2548:32: error: No pair for character ("). Can't process file. File is either invalid or unicode, which is currently not supported. [syntaxError]
+
+                               ^
+tests/tests2/39_typedef.c:63:31: error: syntax error [syntaxError]
+extern sas_type set_anon_super;
+                              ^
+tests/tests2/67_macro_concat.c:4:0: error: failed to expand 'Q', Invalid ## usage when expanding 'Q'. [preprocessorErrorDirective]
+#define Q(A,B) A ## B+
+^
+tests/tests2/73_arm64.c:311:1: error: va_list 'ap' was opened but not closed by va_end(). [va_end_missing]
+}
+^
+tests/tests2/83_utf8_in_identifiers.c:2:8: error: The code contains unhandled character(s) (character code=208). Neither unicode nor extended ascii is supported. [syntaxError]
+double привет=0.1;
+       ^
+tests/tests2/96_nodata_wanted.c:52:8: error: Syntax Error: AST broken, binary operator '=' doesn't have two operands. [internalAstError]
+    tl = -(&&te0 - &&ts0);
+       ^
+tests/vla_test.c:28:11: error: Using pointer to local variable 'test' that is out of scope. [invalidLifetime]
+  return (array_ptrs[0]-array_ptrs[LOOP_COUNT-1] < n) ? 0 : 1;
+          ^
+tests/vla_test.c:25:21: note: Array decayed to pointer here.
+    array_ptrs[i] = test;
+                    ^
+tests/vla_test.c:23:10: note: Variable created here.
+    char test[n];
+         ^
+tests/vla_test.c:28:11: note: Using pointer to local variable 'test' that is out of scope.
+  return (array_ptrs[0]-array_ptrs[LOOP_COUNT-1] < n) ? 0 : 1;
+          ^
+tests/vla_test.c:60:15: error: Subtracting pointers that point to different objects [comparePointers]
+  return (test-test2 >= n) ? 0 : 1;
+              ^
+tests/vla_test.c:53:8: note: Variable declared here.
+  char test[n];
+       ^
+tests/vla_test.c:60:11: note: Array decayed to pointer here.
+  return (test-test2 >= n) ? 0 : 1;
+          ^
+tests/vla_test.c:58:8: note: Variable declared here.
+  char test2[n];
+       ^
+tests/vla_test.c:60:16: note: Array decayed to pointer here.
+  return (test-test2 >= n) ? 0 : 1;
+               ^
+tests/vla_test.c:60:15: note: Subtracting pointers that point to different objects
+  return (test-test2 >= n) ? 0 : 1;
+              ^
+x86_64-gen.c:336:39: warning: Possible null pointer dereference: sym [nullPointer]
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+x86_64-gen.c:1431:46: note: Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+    gen_modrm64(0x89, arg_regs[i], VT_LOCAL, NULL, loc);
+                                             ^
+x86_64-gen.c:336:39: note: Null pointer dereference
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+x86_64-gen.c:270:21: warning: Possible null pointer dereference: sym [nullPointer]
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+x86_64-gen.c:977:64: note: Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+        gen_modrm64(0x89, arg_regs[reg_param_index], VT_LOCAL, NULL, addr);
+                                                               ^
+x86_64-gen.c:338:31: note: Calling function 'gen_modrm_impl', 3rd argument 'sym' value is 0
+    gen_modrm_impl(op_reg, r, sym, c, is_got);
+                              ^
+x86_64-gen.c:298:19: note: Calling function 'gen_gotpcrel', 2nd argument 'sym' value is 0
+  gen_gotpcrel(r, sym, c);
+                  ^
+x86_64-gen.c:270:21: note: Null pointer dereference
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+x86_64-gen.c:336:39: warning: Possible null pointer dereference: sym [nullPointer]
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+x86_64-gen.c:977:64: note: Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+        gen_modrm64(0x89, arg_regs[reg_param_index], VT_LOCAL, NULL, addr);
+                                                               ^
+x86_64-gen.c:336:39: note: Null pointer dereference
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+x86_64-gen.c:270:21: error: Null pointer dereference: sym [ctunullpointer]
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+x86_64-gen.c:1496:30: note: Calling function 'gen_modrm', 3rd argument 'NULL' value is 0
+
+                             ^
+x86_64-gen.c:328:19: note: Calling function gen_modrm_impl, 3rd argument is null
+    gen_modrm_impl(op_reg, r, sym, c, 0);
+                  ^
+x86_64-gen.c:298:3: note: Calling function gen_gotpcrel, 2nd argument is null
+  gen_gotpcrel(r, sym, c);
+  ^
+x86_64-gen.c:270:21: note: Dereferencing argument sym that is null
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+nofile:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information. [toomanyconfigs]
+

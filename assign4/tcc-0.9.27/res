@@ -1,0 +1,62 @@
+Checking x86_64-gen.c ...
+x86_64-gen.c:336:39: warning: Possible null pointer dereference: sym [nullPointer]
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+x86_64-gen.c:1431:46: note: Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+    gen_modrm64(0x89, arg_regs[i], VT_LOCAL, NULL, loc);
+                                             ^
+x86_64-gen.c:336:39: note: Null pointer dereference
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+Checking x86_64-gen.c: ASSEMBLY_LISTING_C67...
+Checking x86_64-gen.c: CONFIG_TCCBOOT...
+Checking x86_64-gen.c: CONFIG_TCCBOOT;TCC_MUSL;TCC_UCLIBC...
+Checking x86_64-gen.c: CONFIG_TCC_BCHECK...
+Checking x86_64-gen.c: CONFIG_TCC_BCHECK;TCC_TARGET_PE...
+x86_64-gen.c:270:21: warning: Possible null pointer dereference: sym [nullPointer]
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+x86_64-gen.c:977:64: note: Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+        gen_modrm64(0x89, arg_regs[reg_param_index], VT_LOCAL, NULL, addr);
+                                                               ^
+x86_64-gen.c:338:31: note: Calling function 'gen_modrm_impl', 3rd argument 'sym' value is 0
+    gen_modrm_impl(op_reg, r, sym, c, is_got);
+                              ^
+x86_64-gen.c:298:19: note: Calling function 'gen_gotpcrel', 2nd argument 'sym' value is 0
+  gen_gotpcrel(r, sym, c);
+                  ^
+x86_64-gen.c:270:21: note: Null pointer dereference
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+x86_64-gen.c:336:39: warning: Possible null pointer dereference: sym [nullPointer]
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+x86_64-gen.c:977:64: note: Calling function 'gen_modrm64', 4th argument 'NULL' value is 0
+        gen_modrm64(0x89, arg_regs[reg_param_index], VT_LOCAL, NULL, addr);
+                                                               ^
+x86_64-gen.c:336:39: note: Null pointer dereference
+    is_got = (op_reg & TREG_MEM) && !(sym->type.t & VT_STATIC);
+                                      ^
+Checking x86_64-gen.c: CONFIG_TCC_ELFINTERP;TCC_ARM_EABI...
+Checking x86_64-gen.c: CONFIG_TCC_STATIC...
+Checking x86_64-gen.c: CONFIG_TRIPLET...
+Checking x86_64-gen.c: CONFIG_USE_LIBGCC;TCC_LIBGCC...
+Checking x86_64-gen.c: DEBUG_RELOC...
+Checking x86_64-gen.c: FUNC_STRUCT_PARAM_AS_PTR...
+x86_64-gen.c:270:21: error: Null pointer dereference: sym [ctunullpointer]
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+x86_64-gen.c:1496:30: note: Calling function 'gen_modrm', 3rd argument 'NULL' value is 0
+
+                             ^
+x86_64-gen.c:328:19: note: Calling function gen_modrm_impl, 3rd argument is null
+    gen_modrm_impl(op_reg, r, sym, c, 0);
+                  ^
+x86_64-gen.c:298:3: note: Calling function gen_gotpcrel, 2nd argument is null
+  gen_gotpcrel(r, sym, c);
+  ^
+x86_64-gen.c:270:21: note: Dereferencing argument sym that is null
+        get_tok_str(sym->v, NULL), c, r,
+                    ^
+nofile:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information. [toomanyconfigs]
+
